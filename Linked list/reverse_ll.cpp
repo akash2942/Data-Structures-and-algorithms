@@ -2,14 +2,14 @@ lass Solution {
 public:
     ListNode* reverseList(ListNode* head) {
         ListNode* a = nullptr;
-        ListNode* b = head;
+        ListNode* x = head;
         ListNode* temp;
 
-        while(b){
-            temp = b -> next;
-            b -> next = a;
-            a = b;
-            b = temp;
+        while(x){
+            temp = x -> next;
+            x -> next = a;
+            a = x;
+            x = temp;
         }
         return temp;
     }
