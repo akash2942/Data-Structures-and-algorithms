@@ -2,7 +2,7 @@ class Solution {
 public:
     int lengthOfLastWord(string s) {
 
-        int a = 0;
+        int b = 0;
         int count = 0;
 
         for(int i = s.length() - 1; i >= 0; i--) {
@@ -13,7 +13,7 @@ public:
 
             if(s[i] != ' ') {
                 count = 1;
-                a++;
+                b++;
             }
             
             else {
@@ -21,6 +21,6 @@ public:
             }
         }
 
-        return a;
+        return b;
     }
 };
